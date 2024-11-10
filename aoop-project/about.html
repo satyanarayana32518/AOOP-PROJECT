@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Hotel Booking Website</title>
+
+    <!-- Font Awesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="about.css" />
+</head>
+<body>
+    <header class="header" id="home">
+        <nav>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/logo.jpg" alt="Logo" />
+                    </a>
+                </div>
+                <div class="menu_btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="popular.html">Popular</a></li>
+                <li><a href="explore.html">Explore</a></li>
+            </ul>
+            <button class="btn nav_btn"><a href="book.html">Book Now</a></button>
+        </nav>
+    </header>
+
+    <section class="section about_section" id="about">
+        <div class="about_container">
+            <div class="about_img">
+                <img src="images/about-img.jpg" alt="About Us" />
+            </div>
+            <div class="about_text">
+              <h1>Our team's goal is to build you a <span class="highlight">creative, functional hotel management system</span>.</h1>
+              <p>Our platform is developed to support hotel staff and enhance guest experience through an easy-to-use interface, real-time analytics, and a seamless booking process.</p>
+              <h2>Our #1 goal is to make your hotel management seamless.</h2>
+              <button class="more_about" onclick="toggleContent()">MORE ABOUT US →</button>
+              <div class="extra_content" id="extraContent">
+                <p>Our hotel management system includes:</p>
+                <ul>
+                  <li>Room Management: Easily track and manage room availability, booking status, and room maintenance.</li>
+                  <li>User-Friendly Interface: An intuitive interface for both hotel staff and guests.</li>
+                  <li>Secure Payments: Integrated secure payment options to ensure safety and convenience.</li>
+                  <li>Reporting Tools: Access to real-time analytics on bookings, revenue, and occupancy to make informed decisions.</li>
+                </ul>
+              </div>
+            </div>
+        
+        </div>
+    </section>
+    <script>
+      function toggleContent() {
+  const extraContent = document.getElementById("extraContent");
+  if (extraContent.style.display === "block") {
+    extraContent.style.display = "none";
+  } else {
+    extraContent.style.display = "block";
+  }
+}
+
+    </script>
+</body>
+</html>
